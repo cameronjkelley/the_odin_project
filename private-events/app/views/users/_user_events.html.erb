@@ -1,0 +1,16 @@
+<% object.each do |event| %>
+	<div class="row">
+		<div class="col-xs-2">
+			<p><%= event.date.strftime("%B %d, %Y") %></p>
+		</div>
+		<div class="col-xs-2">
+			<p><%= event.event_time.strftime("%I:%M %p")  %></p>
+		</div>
+		<div class="col-xs-2">
+			<p><%= link_to event.title, event_path(event) %></p>
+		</div>
+		<div class="col-xs-2">
+			<p><%= event.attendees.count %></p>
+		</div>
+	</div>
+<% end %>

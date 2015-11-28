@@ -1,0 +1,18 @@
+<div class="page-header">
+	<div class="row">
+		<div class="col-xs-6">
+			<h3><%= @user.name %></h3>
+		</div>
+		<div class="col-xs-6 text-right" id="create-button">
+			<%= link_to "Create an event", new_event_path, class: 'btn btn-primary' %>
+		</div>
+	</div>
+</div>
+<div class="user-events">
+	<h4>Your Events</h4>
+	<%= render 'users/user_events', object: @events %>
+	<h4>Upcoming Events</h4>
+	<%= render 'users/user_events', object: @upcoming_events %>	
+	<h4>Past Events</h4>
+	<%= render 'users/user_events', object: @past_events %>	
+</div>

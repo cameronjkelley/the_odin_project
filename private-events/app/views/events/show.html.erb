@@ -1,0 +1,10 @@
+<h4><%= @event.title %></h4>
+<p><%= @event.date.strftime("%B %d, %Y") %> at <%= @event.event_time.strftime("%I:%M %p")%></p>
+<p><%= @event.description %></p>
+
+<h5>Attending</h5>
+<ol>
+<% @event.attendees.each do |attendee| %>
+	<li><%= attendee.name %></li>
+<% end %>
+</ol>

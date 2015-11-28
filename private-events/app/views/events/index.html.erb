@@ -1,0 +1,33 @@
+<div class="page-header">
+	<h1>All Events</h1>
+</div>
+<div class="row">
+	<div class="col-xs-2">
+		<h4>Event</h4>
+	</div>
+	<div class="col-xs-2">
+		<h4>Date</h4>
+	</div>
+	<div class="col-xs-2">
+		<h4>Time</h4>
+	</div>
+	<div class="col-xs-2">
+		<h4>Attending</h4>
+	</div>
+</div>
+<% @events.each do |event| %>
+	<div class="row">
+		<div class="col-xs-2">
+			<p><%= link_to event.title, event_path(event) %></p>
+		</div>
+		<div class="col-xs-2">
+			<p><%= event.date.strftime("%B %d, %Y") %></p>
+		</div>
+		<div class="col-xs-2">
+			<p><%= event.event_time.strftime("%I:%M %p") %></p>
+		</div>
+		<div class="col-xs-2">
+			<p><%= event.attendees.count %></p>
+		</div>
+	</div>
+<% end %>
