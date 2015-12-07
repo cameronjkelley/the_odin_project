@@ -1,0 +1,21 @@
+<div class="page-header">
+	<h1>Members Only <em>Posts</em></h1>
+</div>
+
+<% @posts.each do |post| %>
+	<div class="row">
+		<div class="col-xs-8">
+			<h4><%= post.title %></h4>
+			<p><%= post.body %></p>
+		</div>
+		<% if signed_in? %>
+			<div class="col-xs-4">
+				<p><%= post.user.name %></p>
+			</div>
+		<% end %>
+	</div>
+<% end %>
+
+<% if signed_in? %>
+	<%= link_to "Create New Post", new_post_path %>
+<% end %>

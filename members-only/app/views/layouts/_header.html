@@ -1,0 +1,15 @@
+<div class="container">
+	<header>
+		<nav class="nav nav-navbar">
+			<div class="row">
+				<ul>
+				<% if signed_in? %>
+					<li><%= link_to "#{current_user.name} Sign out", signout_path, method: "delete", data: { confirm: "Are you sure?" } %></li>
+				<% else %>
+					<li><%= link_to "Sign in", signin_path %></li>
+				<% end %>
+				</ul>
+			</div>
+		</nav>
+	</header>
+</div>

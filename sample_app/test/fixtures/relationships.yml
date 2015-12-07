@@ -1,0 +1,15 @@
+one:
+  follower: mocha
+  followed: lana
+
+two:
+  follower: mocha
+  followed: mallory
+
+three:
+  follower: lana
+  followed: mocha
+
+four:
+  follower: archer
+  followed: mocha
