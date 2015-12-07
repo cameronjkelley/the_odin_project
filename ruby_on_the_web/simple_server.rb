@@ -18,9 +18,8 @@ loop {
       socket.puts response_body
     elsif method == "POST"
       params = JSON.parse(request_body)
-      vikings = ""
-      params['viking'].each { |key, value| vikings += "<li>#{key}: #{value}</li>\n" }
-      socket.puts response_body.gsub('<%= yield %>', vikings)
+      viking = "<li>#{params['viking']['name']}: #{params['viking']['email']}</li>\n" }
+      socket.puts response_body.gsub('<%= yield %>', viking)
     end
   else
     socket.puts "HTTP/1.1 404 Not Found\r\n\r\n"

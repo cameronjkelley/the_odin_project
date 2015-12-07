@@ -24,9 +24,11 @@ else
   request = "GET /index.html HTTP/1.1\r\n\r\n"
 end
 
-socket = TCPSocket.open(host, port)           # connect to server
-socket.print(request)                         # send request
-response = socket.read                        # read complete response
-headers, body = response.split("\r\n\r\n", 2) # split response at first blank line into headers and body
+socket = TCPSocket.open(host, port)          
+socket.print(request)                         
+
+response = socket.read                        
+headers, body = response.split("\r\n\r\n", 2) 
 print body
+
 socket.close
