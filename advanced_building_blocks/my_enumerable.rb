@@ -54,7 +54,7 @@ module Enumerable
 		arr
 	end
 
-	def my_inject(default) 
+	def my_inject(default = 0) 
 		self.my_each { |x| default = yield(default, x) }
 		default
 	end
@@ -64,5 +64,3 @@ end
 def multiply_els(arr)
 	arr.my_inject(1) { |x, y| x * y }
 end
-
-p multiply_els([5, 4, 3, 2])

@@ -30,5 +30,3 @@ def caesar_cipher(message, shift)
 	end
 	code_array.join
 end
-
-puts caesar_cipher("This is a secret message.", 8)

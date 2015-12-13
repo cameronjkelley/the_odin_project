@@ -1,5 +1,16 @@
 module TicTacToe
 
+	class Player
+		attr_accessor :name, :mark, :moves
+
+		def initialize(name, mark)
+			@name = name
+			@mark = mark
+			@moves = []
+		end
+	end
+
+
 	class Grid	
 		attr_accessor :grid, :cells
 
@@ -23,7 +34,6 @@ module TicTacToe
 
 	class Game
 		@@wins = [[1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 2, 3], [4, 5, 6], [7, 8, 9], [1, 5, 9], [3, 5, 7]]
-		attr_accessor :game_grid, :turns, :player1, :player2
 		
 		def initialize
 			@game_grid = Grid.new
@@ -34,14 +44,12 @@ module TicTacToe
 			play
 		end
 
-		Player = Struct.new(:name, :mark, :moves)
-
 		def whose_playing(z)
 			mark = ""
 			z == 1 ? mark = "X" : mark = "O"
 			puts "\nPlayer #{z} enter your name: "
 			print ">> "
-			return Player.new(gets.chomp, mark, [])
+			Player.new(gets.chomp, mark)
 		end
 
 		
@@ -75,21 +83,21 @@ module TicTacToe
 					end
 					if three_in_a_row == 3
 						puts "#{player.name} wins! Congratulations!"
-						return true
+						true
 					end
 				end
 			end
 			@turns -= 1
-			return false
+			false
 		end
 
 		
 		def cat?
 			if @turns == 0 && !win?
 				puts "CAT!"
-				return true
+				true
 			else
-				return false
+				false
 			end
 		end
 
@@ -112,7 +120,6 @@ module TicTacToe
 			end
 		end
 
-		# refactor as conditional using ranges?
 		def update_grid(y) 
 			a, b = "", ""
 			case
