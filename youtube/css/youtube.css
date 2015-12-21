@@ -132,6 +132,8 @@ Main
 }
 #subscribe-btn img {
 	padding-right: 5px;
+	position: relative;
+	top: 3px;
 }
 #subscribers {
 	background-color: #fafafa;
@@ -277,18 +279,20 @@ Sidebar
 	position: relative;
 	top: 3px;
 }
-.sidebar-section {
-	margin-bottom: 15px;
+.sidebar-section ul {
+	margin-bottom: 0;
 }
 .desc-wrapper {
 	margin-left: 133px;
+}
+.desc-wrapper h4 {
+	font-size: 0.95em;
 }
 .thumb-wrapper {
 	padding-right: 5px;
 }
 .video-list-item {
 	height: 90px;
-	margin-bottom: 15px;
 }
 .video-list-item h3 {
 	font-size: inherit;
@@ -383,7 +387,7 @@ Images
 	width: 48px;
 }
 .thumb {
-	height: 90px;
+	height: 75px;
 	width: 120px;
 }
 
