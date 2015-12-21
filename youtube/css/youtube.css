@@ -121,7 +121,7 @@ Main
 #subscribe {
 	position:relative;
 	top: -10px;
-	left: -130px;
+	left: -140px;
 }
 #subscribe-btn {
 	background-color: #e62117;
@@ -355,10 +355,8 @@ footer {
 /**************************
 Colors
 **************************/
+
 .bold {
-	font-weight: 500;
-}
-.bolder {
 	font-weight: 800;
 }
 .dk-gray {
