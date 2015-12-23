@@ -1,0 +1,270 @@
+body {
+	font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+a {
+	text-decoration: none;
+}
+#body-wrapper {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+/******************************
+Header
+******************************/
+
+header {
+	margin: auto;
+	margin-bottom: 15px;
+	padding-top: 40px;
+	width: 690px;
+}
+#logo img {
+	height: 32px;
+	position: relative;
+	bottom: -81px;
+	width: 32px;
+}
+#logo h1 {
+	position: relative;
+	left: 33px;
+	bottom: -25px;
+}
+#tabs {
+	position: relative;
+	right: -490px;
+}
+#tabs a {
+	margin: 5px 0;
+	padding: 0 10px;
+}
+
+/******************************
+Main
+******************************/
+#body-wrapper-inner {
+	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+	margin: auto;
+	width: 690px;
+}
+#signup-body {
+	padding: 43px 50px 50px;
+}
+#signup-body h1 {
+	font-size: 30px;
+	margin-bottom: 40px;
+	width: 400px;
+}
+
+/******************************
+Left Column
+******************************/
+
+#left-column {
+	width: 340px;
+	height: 620px;
+}
+fieldset {
+	border: none;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	width: 320px;
+}
+.form-input-label {
+	display: block;
+	height: 18px;
+	margin-bottom: 10px;
+}
+.form-input {
+	width: 320px;
+}
+.form-input input {
+	height: 34px;
+	width: 320px;
+	min-width: 160px;
+}
+/*input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + label span {
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	background: url(../images/checkmark.png) left top no-repeat;
+	border: 1px solid #d8d8d8;
+	border-radius: 3px;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked + label span  {
+	background: url(../images/checkmark.png) -19px top no-repeat;
+}*/
+input[type="submit"] {
+	background: #45cae6;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 1.125em;
+	height: 34px;
+	min-width: 85px;
+	padding: 0 20px;
+}
+.input-box {
+	border: 1px solid #d8d8d8;
+	border-radius: 3px;
+	padding: 0 6px 0 8px;
+	width: 320px;
+	min-width: 160px;
+}
+#remember-checkbox {
+	padding-bottom: 30px;
+}
+#remember-me-label {
+	margin-bottom: 10px;
+	padding: 0 2px;
+}
+#signup-btn {
+	padding-bottom: 30px;
+}
+
+
+/******************************
+Right Column
+******************************/
+
+#right-column {
+	border-left: solid 1px #D3D3D3;
+	height: 580px;	
+	width: 223px;
+}
+#right-column-wrapper {
+	background-color: #f5f5f5;
+	height: 580px;
+	margin-left: 25px;
+	padding: 11px 0 9px 20px;
+	width: 197px;
+}
+#rc-tips li {
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding: 0 10px 5px 0;
+	position: relative;
+	left: -20px;
+}
+#form-body p {
+	color: #7d7f80;
+	font-size: 12px;
+}
+
+/******************************
+Footer
+******************************/
+footer {
+	left: 0;
+	margin-top: 20px;
+	padding: 20px 0 100px;
+	position: absolute;
+	width: 100%;
+}
+#body-footer {
+	width: 1000px;
+	margin: 0 auto;
+}
+#primary-footer-links{
+	width: 100%;
+}
+#primary-footer-links a {
+	padding: 0 2%;
+}
+#secondary-footer-links {
+	margin: 25px 0;
+}
+.security-link {
+	height: 58px;
+	width: 140px;
+}
+.security-link a {
+
+}
+#norton {
+	background-image: url(../images/norton-trust.jpg);
+	background-position: 20px;
+	background-repeat: no-repeat;
+	background-size: 100px 60px;
+}
+#truste {
+	background-image: url(../images/truste.png);
+	background-position: 10px 8px;
+	background-repeat: no-repeat;
+	background-size: 125px 40px;
+}
+#copyright {
+	font-size: 11px;
+}
+
+/******************************
+Layout
+******************************/
+.border-box {
+	box-sizing: border-box;
+}
+.float-l {
+	float: left;
+}
+.float-r {
+	float: right;
+}
+.inline-block {
+	display: inline-block;
+}
+.t-align-c {
+	text-align: center;
+}
+.t-align-l {
+	text-align: left;
+}
+.t-align-r {
+	text-align: right;
+}
+.v-align-b {
+	vertical-align: bottom;
+}
+.v-align-t {
+	vertical-align: top;
+}
+
+/******************************
+Font
+******************************/
+
+.black {
+	color: #000;
+}
+.gray {
+	color: #555;
+}
+.light-gray {
+	color: #a5a5a5;
+}
+.turquoise {
+	color: #45cae6
+}
+.bold {
+	font-weight: 600;
+}
+.less-bold {
+	font-weight: 500;
+}
+.underlined {
+	text-decoration: underline;
+}
+.underline:hover {
+	text-decoration: underline;
+}
+
+
