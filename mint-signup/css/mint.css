@@ -1,6 +1,7 @@
 body {
 	font-family: "AvenirNext-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	margin-top: 0;
 }
 a {
 	text-decoration: none;
@@ -17,7 +18,7 @@ Header
 header {
 	margin: auto;
 	margin-bottom: 15px;
-	width: 690px;
+	width: 740px;
 }
 #logo img {
 	height: 32px;
@@ -32,7 +33,7 @@ header {
 }
 #tabs {
 	position: relative;
-	right: -490px;
+	right: -540px;
 }
 #tabs a {
 	margin: 5px 0;
@@ -45,7 +46,7 @@ Main
 #body-wrapper-inner {
 	box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
 	margin: auto;
-	width: 690px;
+	width: 740px;
 }
 #signup-body {
 	padding: 43px 50px 50px;
