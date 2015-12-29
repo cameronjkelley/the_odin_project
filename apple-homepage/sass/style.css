@@ -1,0 +1,288 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/*********************
+Colors
+*********************/
+/*********************
+Fonts
+*********************/
+.underline:hover {
+  text-decoration: underline; }
+
+/*********************
+Layout
+*********************/
+.clear {
+  clear: both; }
+
+.float-l {
+  float: left; }
+
+.float-r {
+  float: right; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.relative {
+  position: relative; }
+
+/*********************
+General
+*********************/
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #333;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px; }
+
+/*********************
+Header
+*********************/
+#page-header {
+  background: rgba(0, 0, 0, 0.8);
+  height: 48px;
+  min-width: 1024px; }
+
+#page-header-content {
+  height: 44px;
+  margin: 0 auto;
+  max-width: 980px;
+  /* padding: 0 22px; */
+  position: relative; }
+
+#nav-links li {
+  margin: 0 1.325em;
+  padding: 0 10px; }
+  #nav-links li a {
+    color: white;
+    font-size: 16px;
+    height: 44px; }
+    #nav-links li a:hover {
+      color: #999; }
+
+#nav-home a {
+  background: url("../images/apple_image_large.png") no-repeat center;
+  width: 20px; }
+  #nav-home a:hover {
+    opacity: 0.65; }
+
+#nav-mac a {
+  background: url("../images/mac_image_large.png") no-repeat center;
+  background-size: cover;
+  width: 1.72222em;
+  max-width: 52.7px; }
+  #nav-mac a:hover {
+    opacity: 0.65; }
+
+#nav-ipad a {
+  background: url("../images/ipad_image_large.png") no-repeat center;
+  width: 1.66667em;
+  max-width: 51px; }
+  #nav-ipad a:hover {
+    opacity: 0.65; }
+
+#nav-iphone a {
+  background: url("../images/iphone_image_large.png") no-repeat center;
+  width: 2.66667em;
+  max-width: 81.6px; }
+  #nav-iphone a:hover {
+    opacity: 0.65; }
+
+#nav-watch a {
+  background: url("../images/watch_image_large.png") no-repeat center;
+  width: 2.44444em;
+  max-width: 74.8px; }
+  #nav-watch a:hover {
+    opacity: 0.65; }
+
+#nav-tv a {
+  background: url("../images/tv_image_large.png") no-repeat center;
+  width: 1.11111em;
+  max-width: 34px; }
+  #nav-tv a:hover {
+    opacity: 0.65; }
+
+#nav-music a {
+  background: url("../images/music_image_large.png") no-repeat center;
+  width: 2.3em;
+  max-width: 68px; }
+  #nav-music a:hover {
+    opacity: 0.65; }
+
+#nav-support a {
+  background: url("../images/support_image_large.png") no-repeat center;
+  width: 3.35em;
+  max-width: 96.9px; }
+  #nav-support a:hover {
+    opacity: 0.65; }
+
+#nav-search a {
+  background: url("../images/search_image_large.png") no-repeat center;
+  width: 20px; }
+  #nav-search a:hover {
+    opacity: 0.65; }
+
+#nav-bag a {
+  background: url("../images/bag_image_large.png") no-repeat center;
+  width: 18px; }
+  #nav-bag a:hover {
+    opacity: 0.65; }
+
+/*********************
+Hero
+*********************/
+.hero-content {
+  height: 625px;
+  letter-spacing: 0.055em;
+  text-align: center; }
+  .hero-content h1 {
+    font-size: 64px;
+    font-weight: 200;
+    margin: 15px 0 0; }
+  .hero-content h2 {
+    font-size: 32px;
+    font-weight: 200;
+    margin: 0 auto 0.5em auto; }
+
+.links li {
+  margin: 0 7px 5px 6px; }
+  .links li a {
+    color: #08c;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 0.35em 0 0.3em; }
+    .links li a:hover {
+      color: #333; }
+
+.hero {
+  height: 78%;
+  min-height: 650px;
+  width: 1280px;
+  background: url("../images/home_hero_evergreen_ipad_medium.jpg") no-repeat center;
+  z-index: 0; }
+
+/*********************
+Promos
+*********************/
+.promos {
+  border-top: 1px solid #fff;
+  height: 200px;
+  max-width: 2560px;
+  margin: 0 auto;
+  /* top: -250px; */
+  z-index: 1; }
+  .promos ul {
+    height: 200px;
+    margin: 0; }
+    .promos ul li {
+      border-bottom: 2px solid #fff;
+      height: 200px;
+      width: 25%; }
+
+#promo-1 {
+  background: url("../images/promo_holiday_watch_large.jpg") no-repeat center;
+  background-size: 640px 200px;
+  border-right: 1px solid #fff; }
+
+#promo-2 {
+  background: url("../images/promo_appletv_large.jpg") no-repeat center;
+  background-size: 640px 200px;
+  border-right: 1px solid #fff; }
+
+#promo-3 {
+  background: url("../images/promo_ipadmini4_large.jpg") no-repeat center;
+  background-size: 640px 200px;
+  border-right: 1px solid #fff; }
+
+#promo-4 {
+  background: url("../images/promo_swift_watch_large.jpg") no-repeat center;
+  background-size: 640px 200px; }
+
+/*********************
+Footer
+*********************/
+footer {
+  background-color: #f2f2f2;
+  font-size: 12px;
+  color: #666;
+  height: 326px;
+  letter-spacing: 0.035em;
+  min-width: 1024px;
+  z-index: 1; }
+
+.footer-wrapper {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 980px; }
+  .footer-wrapper nav {
+    padding-top: 20px; }
+  .footer-wrapper section {
+    color: #999;
+    padding: 20px 0 24px; }
+
+.footer-column {
+  width: 20%; }
+
+.footer-nav h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0; }
+.footer-nav ul li a {
+  color: #999; }
+
+.footer-shop {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 6px;
+  padding-bottom: 5px; }
+  .footer-shop p {
+    margin: 0; }
+  .footer-shop a {
+    color: #08c; }
+    .footer-shop a:hover {
+      color: #333; }
+
+.footer-copyright {
+  margin-right: 26px; }
+
+.footer-legal-link {
+  border-right: 1px solid #d6d6d6;
+  color: #666;
+  margin-right: 10px;
+  padding-right: 12px; }
+  .footer-legal-link:last-of-type {
+    border-right: none; }
+
+.footer-locale {
+  top: -20px; }
+  .footer-locale a {
+    color: #666;
+    vertical-align: top; }
+
+.footer-locale-flag {
+  height: 16px;
+  width: 16px;
+  margin: 1px 5px 0 0;
+  background: url("../images/us-flag-icon.png") no-repeat center;
+  /* background-position: center center;
+  background-repeat: no-repeat; */
+  background-size: 16px 16px; }
+
+/*# sourceMappingURL=style.css.map */
