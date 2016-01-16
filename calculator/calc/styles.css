@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto-Regular, helvetica, arial, sans-serif;
+	font-weight: 350;
+}
+.container {
+	margin: 0 40px;
+}
+.row {
+	margin-left: -2%;
+}
+[class*="span"] {
+	display: inline;
+	float: left;
+	margin-left: 2%;
+}
+.span-one-fourth {
+	width: 22%;
+}
+.button {
+	border-radius: 1px;
+	margin-top: 5px;
+	padding: 5px 5px;
+	text-align: center;
+}
+.number {
+    background-image: -webkit-linear-gradient(top, #fff, #f1f1f1);
+    background-color: #f5f5f5;
+    border: 1px solid #dedede;
+    color: #444;
+}
+.number:hover {
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222;
+    cursor: pointer;
+}
+.operator {
+	background-image: -webkit-linear-gradient(top, #d6d6d6, #d0d0d0);
+    background-color: #d6d6d6;
+    border: 1px solid #c6c6c6;
+    color: #444;
+    font-weight: 600;
+}
+.operator:hover {
+    background-image: -webkit-linear-gradient(top, #d9d9d9, #d0d0d0);
+    background-color: #d9d9d9;
+    border: 1px solid #b6b6b6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    color: #222;
+    cursor: pointer;
+}
+#calculator {
+	width: 400px;
+}
+#clear-btn {
+    background-image: -webkit-linear-gradient(top, #ff0000, #e60000);
+    background-color: #ff0000;
+    border: 1px solid #cc0000;
+    color: #fff;
+    font-weight: 600;
+}
+#clear-btn:hover {
+    background-image: -webkit-linear-gradient(top, #ff0000, #cc0000);
+    background-color: #e60000;
+    border: 1px solid #b30000;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+#display {
+	border-radius: 1.1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    color: #333;
+    font-size: 1.5em;
+    height: 35px;
+    margin-left: 2%;
+    margin-right: 4%;
+    padding: 3px 2px;
+    text-align: right;
+}
+#equals-btn {
+	background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fefefe;
+}
+#equals-btn:hover {
+    background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+    background-color: #4d90fe;
+    border: 1px solid #2f5bb7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
