@@ -1,0 +1,93 @@
+body {
+	background: url(../images/brick_background.jpg) no-repeat;
+	color: #fff;
+}
+h1 span {
+	font-size: 1.35em;
+	-webkit-text-stroke-width: 3px;
+}
+footer {
+	text-align: center;
+	text-shadow: 1px 1px #000;
+}
+nav {
+	border-bottom: 1px solid #fff;
+}
+.content-div {
+	display: none;
+	height: 400px;
+}
+.cursive {
+	font-family: 'Sarina', cursive;
+}
+.glyphicon {
+	color: #fff;
+	cursor: pointer;
+	font-size: 3em;
+	&:hover {
+		color: #a70204;
+	}
+}
+.icon-bar {
+	background-color: #fff;
+}
+.menu-header {
+	color: #fff;
+	text-shadow: 1px 1px #a70204;
+	h3 {
+		margin-top: 10px;
+	}
+}
+.menu-item {
+	color: #fff;
+	font-size: 20px;
+	padding-bottom: 0;
+	text-shadow: 1px 1px #a70204;	
+}
+.nav-link {
+	color: #fff;
+	font-size: 16px;
+	text-shadow: 1px 1px #a70204;
+	&:hover {
+		border-radius: 2px;
+		color: #a70204;
+		text-shadow: 1px 1px #fff;
+	}
+}
+.navbar-brand {
+	font-size: 24px;
+	margin: 0 15px;
+}
+.neon {
+	color: #a70204;
+	-webkit-text-fill-color: #a70204;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #f2474e;
+}
+#contact {
+	text-align: center;
+	text-shadow: 1px 1px #a70204;
+}
+#content {
+	margin-top: 60px;
+}
+#home {
+	height: 600px;
+	padding: 10px;
+	text-align: center;
+	h1 {
+		font-size: 3.5em;
+		text-shadow: 1px 1px #a70204;
+	} 
+	img {
+		margin-top: 10px;
+	}
+}
+#menu {
+	padding: 10px;
+	text-align: center;
+}
+#prev-arrow {
+	position: relative;
+	left: 95px;
+}
