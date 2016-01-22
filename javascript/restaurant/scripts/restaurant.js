@@ -1,18 +1,18 @@
 $(document).ready(function() {
-	$("#home").css("display", "block");
+	$("#home").show();
 });
 
 $(".nav-link").click(function() {
-	$(".content-div").css("display", "none");
+	$(".content-div").hide();
 	var id = $(this).attr("id");
 	if(id === "home-link") {
-		$("#home").css("display", "block");
+		$("#home").show();
 	} else if(id === "menu-link") {
-		$("#menu").css("display", "block");
+		$("#menu").show();
 	} else if(id === "reviews-link") {
-		$("#reviews").css("display", "block");
+		$("#reviews").show();
 	} else {
-		$("#contact").css("display", "block");
+		$("#contact").show();
 	}
 });
 
