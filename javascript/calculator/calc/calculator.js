@@ -13,14 +13,14 @@ $(".number").click(function() {
 
 $(".operator").click(function() {
 	operator = $.trim($(this).text());
-	if(total === null) {
+	if (total === null) {
 		total = operand;
 		operand = "";
 	}
 });
 
 $("#equals-btn").click(function() {
-	if(total != null) {
+	if (total != null) {
 		var a = parseInt(total),
 			b = parseInt(operand);
 		switch(operator) {
