@@ -3,12 +3,12 @@ var $slides 	 = $('.slide'),
 	$lastSlide   = $slides[$slides.length - 1],
 	$dots 		 = $('.dot'),
 	$firstDot 	 = $dots[0],
-	$lastDot 	 = $dots[$dots.length - 1],
-	timer        = function() { setInterval(nextSlide, 5000); };	
-
-$(function() {
-	timer();
-})	 
+	$lastDot 	 = $dots[$dots.length - 1]
+	timer        = function() { setInterval(nextSlide, 5000); };			
+		
+$(function() {		
+	timer();		
+});
 
 $('.arrow').click(function() {
 	clearInterval(timer);
