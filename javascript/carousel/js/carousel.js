@@ -7,19 +7,11 @@ var $slides 	 = $('.slide'),
 
 $('.arrow').click(function() {
 	if ($(this).attr('id') == 'arrow-prev') {
-		prevSlide();
+		changeSlide($firstSlide, $lastSlide, $lastDot, -1);
 	} else {
-		nextSlide();
+		changeSlide($lastSlide, $firstSlide, $firstDot, 1);
 	}
 })
-
-function prevSlide() {
-	changeSlide($firstSlide, $lastSlide, $lastDot, -1);
-}
-
-function nextSlide() {
-	changeSlide($lastSlide, $firstSlide, $firstDot, 1);
-}
 
 function changeSlide(moveFrom, moveTo, dot, direction) {
 	var $activeSlide = $('.active-slide')[0],
