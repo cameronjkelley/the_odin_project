@@ -20,11 +20,14 @@ nav {
 .cursive {
   font-family: 'Sarina', cursive; }
 
+.arrow {
+  position: relative;
+  top: -176px; }
+
 .glyphicon {
   color: #fff;
   cursor: pointer;
-  font-size: 3em;
-  vertical-align: middle; }
+  font-size: 3em; }
   .glyphicon:hover {
     color: #a70204; }
 
@@ -84,7 +87,6 @@ nav {
   text-align: center; }
 
 #prev-arrow {
-  position: relative;
   left: 95px; }
 
 #review-image {
