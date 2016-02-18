@@ -8,10 +8,10 @@ var $slides 	 = $('.slide'),
 		
 $(function() {		
 	timer();		
-});
+})
 
 $('.arrow').click(function() {
-	clearInterval(timer);
+	clearInterval(timer());
 
 	if ($(this).attr('id') == 'arrow-prev') {
 		prevSlide();
@@ -25,7 +25,7 @@ function prevSlide() {
 }
 
 function nextSlide() {
-	changeSlide($lastSlide, $firstSlide, $firstDot, 1);
+	changeSlide($lastSlide, $firstSlide, $firstDot, 1);	
 }
 
 function changeSlide(moveFrom, moveTo, dot, direction) {
