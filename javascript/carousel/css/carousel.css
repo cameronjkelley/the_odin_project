@@ -66,5 +66,5 @@ body {
 }
 #arrow-next {
 	border-left: 30px solid gray;
-	float: right;
+	float: right !important;
 }
