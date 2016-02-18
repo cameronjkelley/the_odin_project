@@ -23,7 +23,8 @@ nav {
 .glyphicon {
   color: #fff;
   cursor: pointer;
-  font-size: 3em; }
+  font-size: 3em;
+  vertical-align: middle; }
   .glyphicon:hover {
     color: #a70204; }
 
