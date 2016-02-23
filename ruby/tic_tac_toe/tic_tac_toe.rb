@@ -38,13 +38,13 @@ module TicTacToe
 		def initialize
 			@game_grid = Grid.new
 			@turns = 9
-			@player1 = whose_playing(1)
-			@player2 = whose_playing(2)
+			@player1 = whos_playing(1)
+			@player2 = whos_playing(2)
 			instructions
 			play
 		end
 
-		def whose_playing(z)
+		def whos_playing(z)
 			mark = ""
 			z == 1 ? mark = "X" : mark = "O"
 			puts "\nPlayer #{z} enter your name: "
