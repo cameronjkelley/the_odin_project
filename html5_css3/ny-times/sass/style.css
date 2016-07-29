@@ -216,7 +216,7 @@ Main
 *****************************/
 #main {
   padding-top: 10px;
-  margin: 0 115px;
+  margin: 0 auto;
   width: 1050px; }
 
 #main-header {
@@ -428,5 +428,13 @@ Images
 .youtube {
   margin: 45px 0 45px 105px;
   width: 600px; }
+
+/*****************************
+Media Queries
+*****************************/
+@media (max-width: 1280px) {
+  .main {
+    margin: 0 115px; } }
+
 
 /*# sourceMappingURL=style.css.map */
