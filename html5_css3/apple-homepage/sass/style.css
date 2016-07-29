@@ -174,7 +174,7 @@ Hero
 .hero {
   height: 78%;
   min-height: 650px;
-  width: 1280px;
+  /*width: 1280px;*/
   background: url("../images/home_hero_evergreen_ipad_medium.jpg") no-repeat center;
   z-index: 0; }
 
