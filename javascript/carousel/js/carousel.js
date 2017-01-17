@@ -1,10 +1,10 @@
 var $slides = $('.slide'),
-		$firstSlide = $slides[0],
-		$lastSlide = $slides[$slides.length - 1],
-		$dots = $('.dot'),
-		$firstDot = $dots[0],
-		$lastDot = $dots[$dots.length - 1],
-		timer;
+$firstSlide = $slides[0],
+$lastSlide = $slides[$slides.length - 1],
+$dots = $('.dot'),
+$firstDot = $dots[0],
+$lastDot = $dots[$dots.length - 1],
+timer;
 
 function setTimer() {
 	clearInterval(timer);
@@ -13,7 +13,7 @@ function setTimer() {
 
 function changeSlide(moveFrom, moveTo, dot, direction) {
 	var $activeSlide = $('.active-slide')[0],
-			$activeDot = $('.active-dot')[0];
+	$activeDot = $('.active-dot')[0];
 
 	$activeSlide.className = 'slide';
 	$activeDot.className = 'dot';
